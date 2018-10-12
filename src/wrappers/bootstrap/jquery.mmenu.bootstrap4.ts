@@ -104,7 +104,7 @@
 	function cloneDropdown( $d )
 	{
 		var $ul = $('<ul />');
-		$d.children()
+		$d.find( '.dropdown-item, .dropdown-divider' )
 			.each(function() {
 				var $di = $(this),
 					$li = $('<li />');
